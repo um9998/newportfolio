@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+It looks like you are using React 19. Some packages may fail to install due to peer dependency issues in npm (see https://ui.shadcn.com/react-19).
+
+√ How would you like to proceed? » Use --legacy-peer-deps ✔ Installing dependencies. ✔ Created 1 file:
+
+Solution 2: Use React 18 You can downgrade react and react-dom to version 18, which is compatible with the package you are installing and upgrade when the dependency is updated.
+
+npm i react@18 react-dom@18 Copy Whichever solution you choose, make sure you test your app thoroughly to ensure there are no regressions.
