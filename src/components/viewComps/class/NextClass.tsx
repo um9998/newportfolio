@@ -2,13 +2,14 @@ import React from "react";
 import { IDailyData } from "@/components/viewComps/class/Weekly";
 import Daily from "@/components/viewComps/class/Daily";
 import { Button } from "@/components/ui/button";
-import { IUserData } from "@/app/view/page";
+
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { IUserData } from "@/app/view/comp/TestComp1";
 interface Iprops {
   data: IDailyData;
 }
